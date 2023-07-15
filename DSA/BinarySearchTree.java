@@ -87,11 +87,11 @@ If tree has the given value it will return true else it will return false .
     public boolean contains(int value){
         Node temp = root ;
         while(temp != null){
-	// if value is smaller the node then moves to the left child node
+	// if value is smaller the node then temp moves to the left child node
             if(value < temp.value) {
                 temp = temp.left ;
             }
-	 // if value is greater than node then moves to the right child node
+	 // if value is greater than node then temp moves to the right child node
             else if(value > temp.value){
                 temp = temp.right ;
             }
