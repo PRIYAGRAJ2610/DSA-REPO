@@ -1,0 +1,33 @@
+class Solution {
+    public int addDigits(int num) {
+
+
+// hey geek it is super easy , have a look .
+
+// if number is zero then sum is 0 only simple.
+        if(num == 0)
+        {
+            return 0 ;
+        }
+
+// if num ko 9 se divide kar k reminder 0 aata h to number ka sum 9 h 
+// varna divide kar k jo bhi reminder aa raha hai vahi sum hai .
+// eg . 22%9 = 4    , and sum of 2+2 = 4 . hence proved.
+
+        else if(  num % 9 == 0)
+        {
+            return 9 ;
+
+        }
+
+        else
+        {
+            return num %9 ;
+        }
+          
+    }
+}
+
+
+
+// for proper explaination you can visit to my youtube channel
